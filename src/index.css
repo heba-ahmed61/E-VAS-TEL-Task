@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* container class*/
+.ctr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*post card style*/
+.post_card p {
+  max-width: 100ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  word-break: break-word;
+  overflow: hidden;
+}
+
+.post_card p.readmore {
+  -webkit-line-clamp: unset;
+}
+
+/* input general and textarea style*/
+input {
+  outline: none
+}
+
+input:focus {
+  border: 1px solid blue;
+}
+
+textarea {
+  outline: none;
+}
+
+/*item btns style*/
+.title_btns_ctr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap
+}
+
+.posts_forms_wrapper {
+  padding: 1.5rem 3rem;
+  gap: 3rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width:1399.9px) {
+  .title_btns_ctr {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .items_btns {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:1023.9px) {
+  .posts_forms_wrapper {
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+
+  .post_form form {
+    margin-top: 10px;
+  }
+}
+
+@media(max-width:575.98px) {
+  .posts_forms_wrapper {
+    padding: 1.5rem;
+  }
+}
+
+/* tailwind*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
