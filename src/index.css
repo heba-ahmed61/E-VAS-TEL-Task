@@ -60,6 +60,9 @@ textarea {
 .post_card > div:first-of-type{
   background-color: white !important;
 }
+.title_btns_ctr{
+  color: black !important;
+}
 
 @media screen and (max-width:1399.9px) {
   .title_btns_ctr {
