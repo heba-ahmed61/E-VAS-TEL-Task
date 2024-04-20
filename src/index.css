@@ -55,13 +55,15 @@ textarea {
 }
 .post_card{
   background-color: white !important;
-  height: 400px;
 }
 .post_card > div:first-of-type{
   background-color: white !important;
 }
 .title_btns_ctr{
   color: black !important;
+}
+.default-search{
+  background-color: #F9FAFB !important;
 }
 
 @media screen and (max-width:1399.9px) {
